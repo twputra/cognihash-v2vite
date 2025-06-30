@@ -36,28 +36,28 @@ export const SolanaSection: React.FC = () => {
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Validator Nodes */}
-          <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 text-center">
-            <div className="text-5xl font-bold text-gray-900 mb-3">1,090</div>
-            <div className="text-xl font-semibold text-gray-700 mb-6">Validator Nodes</div>
-            <div className="text-sm text-gray-500 leading-relaxed">
+          <div className="bg-white border-x-2 border-black rounded-3xl p-8 text-center">
+            <div className="text-5xl font-bold text-gray-900 mb-3" style={{ color: '#043E5D' }}>1,090</div>
+            <div className="text-xl font-semibold text-gray-700 mb-6" style={{ color: '#043E5D' }}>Validator Nodes</div>
+            <div className="text-sm text-gray-500 leading-relaxed" style={{ color: '#043E5D' }}>
               The Solana network is validated by thousands of nodes that operate independently of each other, ensuring your data remains secure and censorship resistant.
             </div>
           </div>
 
           {/* Net Carbon Impact */}
-          <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 text-center">
-            <div className="text-5xl font-bold text-gray-900 mb-3">0%</div>
-            <div className="text-xl font-semibold text-gray-700 mb-6">Net Carbon Impact</div>
-            <div className="text-sm text-gray-500 leading-relaxed">
+          <div className="bg-white border-x-2 border-black rounded-3xl p-8 text-center">
+            <div className="text-7xl font-bold text-gray-900 mb-3" style={{ color: '#043E5D' }}>0%</div>
+            <div className="text-xl font-semibold text-gray-700 mb-6" style={{ color: '#043E5D' }}>Net Carbon Impact</div>
+            <div className="text-sm text-gray-500 leading-relaxed" style={{ color: '#043E5D' }}>
               Solana's proof of stake network and other innovations minimize its impact on the environment. Each Solana transaction uses about the same energy as a few Google searches.
             </div>
           </div>
 
           {/* Transactions per Second */}
-          <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 text-center">
-            <div className="text-5xl font-bold text-gray-900 mb-3">3,753</div>
-            <div className="text-xl font-semibold text-gray-700 mb-6">Transactions per Second</div>
-            <div className="text-sm text-gray-500 leading-relaxed">
+          <div className="bg-white border-x-2 border-black rounded-3xl p-8 text-center">
+            <div className="text-5xl font-bold text-gray-900 mb-3" style={{ color: '#043E5D' }}>3,753</div>
+            <div className="text-xl font-semibold text-gray-700 mb-6" style={{ color: '#043E5D' }}>Transactions per Second</div>
+            <div className="text-sm text-gray-500 leading-relaxed" style={{ color: '#043E5D' }}>
               Solana has block times of 400 milliseconds — and as hardware gets faster, so will the network.
             </div>
           </div>

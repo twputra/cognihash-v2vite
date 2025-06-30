@@ -44,7 +44,7 @@ export const PartnersSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Partners */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-gray-900 mb-16">Our Partner & Ecosystem</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mb-16" style={{ color: '#043E5D' }}>Our Partner & Ecosystem</h2>
           
           <div className="flex flex-wrap items-center justify-center gap-8 mt-6">
             <img 
@@ -109,13 +109,33 @@ export const PartnersSection: React.FC = () => {
           </div>
         </div>
 
+        <div className="text-center mb-20">
+          <h2 className="text-5xl font-bold text-gray-900 mb-16" style={{ color: '#043E5D' }}>Data Provided by</h2>
+          
+          <div className="flex flex-wrap items-center justify-center gap-8 mt-6">
+            <img 
+              src="/assets/coingecko.png" 
+              alt="Superteam Logo" 
+              className="h-[100px] object-contain"
+              onError={(e) => {
+                // Fallback to text logo if PNG is not available
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                const fallback = target.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'flex';
+              }}
+            />
+            {/* Fallback for Superteam */}
+          </div>
+        </div>
+
         {/* Why Choose CogniHash */}
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">Why choose CogniHash?</h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-2">
+          <h2 className="text-5xl font-bold text-gray-900 mb-6" style={{ color: '#043E5D' }}>Why choose CogniHash?</h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-2" style={{ color: '#043E5D' }}>
             CogniHash is building the first AI-native OS for blockchain thinking.
           </p>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto" style={{ color: '#043E5D' }}>
             Where AI agents don't just observe the chain—they understand, trace, and act on it in real time.
           </p>
         </div>

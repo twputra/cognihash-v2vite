@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, FileText, Database, Layers, Network } from 'lucide-react';
+// import { User, FileText, Database, Layers, Network } from 'lucide-react';
 
 export const VisionMissionSection: React.FC = () => {
   return (
@@ -28,8 +28,41 @@ export const VisionMissionSection: React.FC = () => {
           </div>
         </div>
 
+         {/* Animated Video Below Mission */}
+         <div className="flex justify-center mb-16">
+          <video
+            src="/assets/rute-2.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full max-w-5xl h-auto rounded-xl shadow-2xl opacity-90"
+            onError={(e) => {
+              // Fallback to animated placeholder if video is not available
+              const target = e.target as HTMLVideoElement;
+              target.style.display = 'none';
+              const fallback = target.nextElementSibling as HTMLElement;
+              if (fallback) fallback.style.display = 'block';
+            }}
+          />
+          
+          {/* Fallback animated placeholder (hidden by default) */}
+          <div className="w-full max-w-5xl h-64 bg-white/10 backdrop-blur-sm rounded-xl shadow-2xl hidden items-center justify-center">
+            <div className="flex space-x-8 animate-pulse">
+              {/* Animated connection lines */}
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 bg-white/20 rounded-full animate-bounce"></div>
+                <div className="w-24 h-1 bg-white/30 rounded-full animate-pulse"></div>
+                <div className="w-16 h-16 bg-white/20 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                <div className="w-24 h-1 bg-white/30 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                <div className="w-16 h-16 bg-white/20 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Feature Icons */}
-        <div className="flex justify-center space-x-12">
+        {/* <div className="flex justify-center space-x-12">
           {[
             { icon: User, color: 'from-purple-400 to-pink-500' },
             { icon: FileText, color: 'from-blue-400 to-purple-500' },
@@ -41,7 +74,7 @@ export const VisionMissionSection: React.FC = () => {
               <item.icon className="w-10 h-10 text-white" />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

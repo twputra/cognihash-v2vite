@@ -9,7 +9,7 @@ export const FeaturesSection: React.FC = () => {
           {/* Zero Dev Overhead */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-5xl font-bold text-gray-900">Zero Dev Overhead</h2>
+              <h2 className="text-5xl font-bold text-gray-900" style={{ color: '#043E5D' }}>Zero Dev Overhead</h2>
               <div className="space-y-4">
                 <p className="text-lg text-gray-600 leading-relaxed">
                   CogniHash operates on the principle that blockchain intelligence should be autonomous, 
@@ -25,11 +25,11 @@ export const FeaturesSection: React.FC = () => {
               </button>
             </div>
             
-            <div className="flex justify-center lg:justify-end">
+            <div className="border-black border-2 flex justify-center lg:justify-end rounded-xl">
               <img
                 src="/assets/section1.gif"
                 alt="Zero Dev Overhead Animation"
-                className="w-full max-w-[500px] h-auto object-contain rounded-2xl"
+                className="w-full max-w-[600px] h-auto object-contain rounded-2xl"
                 onError={(e) => {
                   // Fallback to demo interface if GIF is not available
                   const target = e.target as HTMLImageElement;
@@ -46,7 +46,7 @@ export const FeaturesSection: React.FC = () => {
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center transform rotate-45">
                       <div className="w-4 h-4 bg-white rounded-sm transform -rotate-45"></div>
                     </div>
-                    <span className="font-semibold text-gray-900 text-lg">CogniHash Data Intel</span>
+                    <span className="font-semibold text-gray-900 text-lg" >CogniHash Data Intel</span>
                   </div>
                   <div className="space-y-6">
                     <div className="text-gray-600">What can I do for you?</div>
@@ -66,8 +66,8 @@ export const FeaturesSection: React.FC = () => {
 
           {/* HMAS */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="lg:order-2 space-y-6">
-              <h2 className="text-5xl font-bold text-gray-900">HMAS</h2>
+            <div className="space-y-6">
+              <h2 className="text-5xl font-bold text-gray-900" style={{ color: '#043E5D' }}>HMAS</h2>
               <div className="space-y-4">
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Higher-level agents supervise and coordinate lower-level agents to achieve complex tasks 
@@ -85,7 +85,7 @@ export const FeaturesSection: React.FC = () => {
               </button>
             </div>
             
-            <div className="lg:order-1 flex justify-center lg:justify-start">
+            <div className="border-black border-2 flex justify-center lg:justify-end rounded-xl">
               <video
                 autoPlay
                 loop
@@ -142,7 +142,7 @@ export const FeaturesSection: React.FC = () => {
           {/* Model Context Protocol (MCP) */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-5xl font-bold text-gray-900">
+              <h2 className="text-5xl font-bold text-gray-900" style={{ color: '#043E5D' }}>
                 Model Context Protocol (MCP)
               </h2>
               <div className="space-y-4">
@@ -158,13 +158,13 @@ export const FeaturesSection: React.FC = () => {
               </button>
             </div>
             
-            <div className="flex justify-center lg:justify-end">
+            <div className="border-black border-2 flex justify-center lg:justify-end rounded-xl">
               <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full max-w-[500px] h-auto object-contain rounded-2xl"
+                className="w-full max-w-[600px] h-auto object-contain rounded-2xl"
                 onError={(e) => {
                   // Fallback to static visualization if video is not available
                   const target = e.target as HTMLVideoElement;
